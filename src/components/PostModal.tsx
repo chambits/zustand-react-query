@@ -1,15 +1,21 @@
-import {
-  useSelectedPost,
-  useModalOpen,
-  usePostActions,
-} from "../store/usePostStore";
+import { useEffect, useState } from "react";
+import { useSelectedPost } from "../store/usePostStore";
 
 const PostModal = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const selectedPost = useSelectedPost();
-  const modalOpen = useModalOpen();
-  const { closeModal } = usePostActions();
 
-  if (!modalOpen) return null;
+  useEffect(() => {
+    if (selectedPost) {
+      setIsOpen(true);
+    }
+  }, [selectedPost]);
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
+  if (!isOpen || !selectedPost) return null;
 
   return (
     <div
@@ -31,9 +37,9 @@ const PostModal = () => {
           borderRadius: 10,
         }}
       >
-        <h2>{selectedPost?.title}</h2>
-        <p>{selectedPost?.content}</p>
-        <button onClick={closeModal}>Close</button>
+        <h2>{selectedPost.title}</h2>
+        <p>{selectedPost.content}</p>
+        <button onClick={handleClose}>Close</button>
       </div>
     </div>
   );
