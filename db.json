@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Getting Started with Python",
+      "content": "Python is a versatile programming language perfect for beginners"
+    },
+    {
+      "id": 2,
+      "title": "Data Structures Explained",
+      "content": "Understanding arrays, linked lists, and trees is fundamental"
+    },
+    {
+      "id": 3,
+      "title": "Web Development Basics",
+      "content": "HTML, CSS, and JavaScript form the foundation of web development"
+    },
+    {
+      "id": 4,
+      "title": "Database Design Tips",
+      "content": "Learn how to structure your databases for optimal performance"
+    },
+    {
+      "id": 5,
+      "title": "API Development Guide",
+      "content": "Best practices for creating RESTful APIs"
+    },
+    {
+      "id": 6,
+      "title": "Mobile App Development",
+      "content": "Introduction to building apps for iOS and Android"
+    },
+    {
+      "id": 7,
+      "title": "Cloud Computing Essentials",
+      "content": "Understanding AWS, Azure, and Google Cloud Platform"
+    },
+    {
+      "id": 8,
+      "title": "Cybersecurity Best Practices",
+      "content": "Protecting your applications from common security threats"
+    },
+    {
+      "id": 9,
+      "title": "Machine Learning Basics",
+      "content": "Getting started with AI and machine learning concepts"
+    },
+    {
+      "id": 10,
+      "title": "DevOps Pipeline Setup",
+      "content": "Creating efficient CI/CD pipelines for your projects"
+    },
+    {
+      "id": 11,
+      "title": "Git Version Control",
+      "content": "Master the essentials of Git and GitHub workflow"
+    },
+    {
+      "id": 12,
+      "title": "UI/UX Design Principles",
+      "content": "Creating user-friendly and attractive interfaces"
+    },
+    {
+      "id": 13,
+      "title": "Testing Strategies",
+      "content": "Unit testing, integration testing, and end-to-end testing approaches"
+    },
+    {
+      "id": 14,
+      "title": "Code Optimization",
+      "content": "Tips for writing efficient and maintainable code"
+    },
+    {
+      "id": 15,
+      "title": "Agile Development",
+      "content": "Understanding Scrum and Agile methodologies"
+    },
+    {
+      "id": 16,
+      "title": "Frontend Frameworks",
+      "content": "Comparing React, Vue, and Angular"
+    },
+    {
+      "id": 17,
+      "title": "Backend Architecture",
+      "content": "Designing scalable server-side applications"
+    },
+    {
+      "id": 18,
+      "title": "Docker Containers",
+      "content": "Containerization basics and deployment strategies"
+    },
+    {
+      "id": 19,
+      "title": "Database Optimization",
+      "content": "Improving query performance and database efficiency"
+    },
+    {
+      "id": 20,
+      "title": "Software Architecture",
+      "content": "Design patterns and architectural principles"
+    }
+  ]
+}
