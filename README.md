@@ -1,4 +1,4 @@
-# Zustand + React Query App
+# Zustand + React Query
 
 A simple React app using Zustand for client state management and React Query for server state management, built with Vite and JSON Server as a mock API.
 
@@ -67,27 +67,4 @@ yarn dev
 │   ├── main.tsx
 ├── db.json # Mock JSON server database
 ├── vite.config.ts
-```
-
-## 📝 API Endpoints (JSON Server)
-
-- `GET /posts` - Fetch all posts
-
-## 📌 Zustand Usage
-
-```tsx
-import { usePostStore } from "../store/usePostStore";
-
-const Example = () => {
-  const selectedPost = usePostStore((state) => state.selectedPost);
-  return <div>{selectedPost?.title}</div>;
-};
-```
-
-## 📌 React Query Usage
-
-```tsx
-import { useQuery } from "react-query";
-
-const { data: posts } = useQuery("posts", fetchPosts);
 ```
