@@ -1,18 +1,8 @@
-import { useQuery } from "@tanstack/react-query";
-import { fetchPosts } from "../api/posts";
 import { usePostActions } from "../store/usePostStore";
-import { Post } from "../types";
+import { usePosts } from "../hooks/usePosts";
 
 const PostsList = () => {
-  const {
-    data: posts,
-    isLoading,
-    error,
-  } = useQuery<Post[]>({
-    queryKey: ["posts"],
-    queryFn: fetchPosts,
-  });
-
+  const { data: posts, isLoading, error } = usePosts();
   const { setSelectedPost } = usePostActions();
 
   if (isLoading) return <p>Loading...</p>;
