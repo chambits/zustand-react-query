@@ -1,8 +1,7 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import PostsList from "./components/PostsList";
+import { QueryClientProvider } from "@tanstack/react-query";
 import PostModal from "./components/PostModal";
-
-const queryClient = new QueryClient();
+import PostsList from "./components/PostsList";
+import { queryClient } from "./queryClient";
 
 function App() {
   return (
